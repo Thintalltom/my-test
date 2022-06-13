@@ -1,0 +1,19 @@
+body{
+    background-color: darkkhaki;
+}
+p{
+    font-family: 'Segoe UI';
+    font-size: xx-large;
+    text-align: center;
+    color: blue;
+}
+button{
+    width: 10%;
+    height: 20%;
+    text-align: center;
+    color:white;
+    background-color: black;
+}
+#display{
+    margin-top: 2%;
+}

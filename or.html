@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK href="or.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body> 
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown 
+        </button>
+        <div class="dropdown-content">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+        </div>
+    </div>   
+</div>
+<div>
+    <button id="menu"> MENU </button>
+</div>
+
+<nav>
+    <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+</body>
+   <script>
+       document.getElementById('menu').addEventListener('click', function(){
+           document.querySelector('nav').classList.toggle('show')
+       })
+   </script>
+
+</html>
