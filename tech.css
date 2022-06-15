@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(pexels-pixabay-38568.jpg);
+    width:100%;
+    min-height:100vh;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    background-repeat: no-repeat;
+   
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:2% 5%;
+}
+.nav-link ul li{
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color:white;
+    text-decoration: none;
+    font-family: Cambria;
+}
+.nav-link{
+    flex:1;
+    text-align: right;
+}
+.nav-link ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:rgba(17, 46, 163, 0.7);
+    display:block;
+    margin:auto;
+}
+.nav-link ul li:hover::after{
+    width:100%;
+    transition:0.5s;
+}
+.description{
+    width:90%;
+    color:white;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.description h1{
+    font-size:62px;
+    text-align: center;
+}
+.description p{
+    margin:10px 0px 4px;
+    font-size:14px;
+    color:white;
+    text-align: center;
+}
+.the-btn{
+    text-align: center;
+    margin-left: 43%;
+    margin-top: 5px;
+    color:white;
+    display:inline-block;
+    border:1px solid white;
+    position:relative;
+    background: transparent;
+    cursor:pointer;
+    padding:10px;
+}
+.the-btn:hover{
+    background-color: blue;
+    border: 1px white;
+    transition:1s;
+}
+@media (max-width:900px) {
+    .description h1{
+        font-size:50px;
+    }
+    .nav-link ul li{
+        display:block;
+    }
+    .nav-link{
+        position:absolute;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right:0;
+        text-align:left;
+        z-index:2;
+        background: #f44336;
+
+    }
+    .the-btn{
+        margin-left:30%;
+        position:absolute;
+    }
+    
+}
+.services h1{
+    text-align: center;
+    font-size: 30px;
+    color:black;
+    font-family: Cambria;
+    padding-top: 100px;
+}
+.in{
+    text-align: center;
+    font-family: Cambria;
+}
+.services p{
+    font-family: Cambria;
+    font-size: 14px;
+    padding:10px;
+    color:black;
+    font-weight:300;
+    line-height: 22px;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+
+}
+.services p{
+    color:black;
+    font-size: 14px;
+    font-weight:300;
+    line-height:22px;
+    padding:10px;
+}
+.ui{
+    flex-basis:31%;
+    background-color: rgb(194, 230, 241);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing:border-box;
+    transition:0.5s;
+}
+.row :hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0
+}
+@media (max-width:900px) {
+    .row{
+       flex-direction: column;
+    }
+    
+}
+.overview{
+    width:80%;
+    text-align:center;
+    padding-top:50px;
+    margin:auto;
+}
+.overview h1{
+    font-family: Cambria;
+    
+}
+.site{
+    flex-basis:32%;
+    border-radius:10px;
+    margin-bottom:30px;
+    position:relative;
+   overflow:hidden;
+   padding-top:5%;
+
+}
+.building{
+    width:50%;
+    height: 50%;
+    margin-left: -50%;
+    border-radius:10px ;
+}
+.layer{
+    height: 100%;
+    width:50%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius:10px ;
+    transition: 0.5s;
+    padding-top:5%;
+}
+.site :hover{
+    background-color: rgb(194, 0, 0, 0.1);
+}
+
+
